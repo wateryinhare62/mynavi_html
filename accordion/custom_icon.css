@@ -1,0 +1,26 @@
+details {
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50rem;
+    height: auto;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+details summary::before {
+    font-size: xx-large;
+    font-weight: 900;
+    content: '＋';
+    margin-right: 0.5rem;
+}
+
+details[open] summary::before {
+    content: '－';
+}
