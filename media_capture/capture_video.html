@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>バックカメラで動画撮影</title>
+    <style>
+        label, input {
+            display: block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="https://annex.naosan.jp/upload.php" method="POST">
+        <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+        <label for="backcamera">バックカメラで動画撮影：</label>
+        <input type="file" id="backcamera" name="videofile" capture="environment" accept="video/*" />
+        <input type="submit" value="送信" />
+    </form>
+</body>
+</html>
