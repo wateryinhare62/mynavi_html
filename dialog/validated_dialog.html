@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>必須項目のあるダイアログ</title>
+</head>
+
+<body>
+    <dialog>
+        <form method="dialog">
+            <p><label>
+                好きな麺類は？
+                <input type="text" required />
+            </label></p>
+            <div>
+                <input type="submit" id="normal-close" value="閉じる（検証あり）" />
+                <input type="submit" id="novalidate-close" value="閉じる（検証なし）" formnovalidate />
+                <input type="submit" id="js-close" value="閉じる（closeメソッド）" />
+            </div>
+        </form>
+    </dialog>
+    <button id="show">ダイアログを表示</button>
+    <script src="validated_dialog.js"></script>
+</body>
+
+</html>

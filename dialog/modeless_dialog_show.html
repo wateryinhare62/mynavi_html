@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モードレスなダイアログ</title>
+</head>
+
+<body>
+    <p><label>好きな麺類を教えてください：<br>
+        <select>
+            <option value="default">選択してください</option>
+            <option>ラーメン</option>
+            <option>そば</option>
+            <option>うどん</option>
+            <option>その他</option>
+        </select>
+    </label></p>
+    <dialog>
+        <p>モードレスなダイアログ</p>
+        <form method="dialog">
+            <button>閉じる</button>
+        </form>
+    </dialog>
+    <button id="showButton">ダイアログを表示する</button>
+    <script src="modeless_dialog_show.js"></script>
+</body>
+
+</html>

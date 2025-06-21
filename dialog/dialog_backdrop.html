@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モーダルなダイアログ</title>
+    <link rel="stylesheet" href="dialog_backdrop.css">
+</head>
+
+<body>
+    <p><label>好きな麺類を教えてください：<br>
+        <select>
+            <option value="default">選択してください</option>
+            <option>ラーメン</option>
+            <option>そば</option>
+            <option>うどん</option>
+            <option>その他</option>
+        </select>
+    </label></p>
+    <dialog>
+        <p>モーダルダイアログの背後にあるものは操作できません！</p>
+        <form method="dialog">
+            <button autofocus>閉じる</button>
+        </form>
+    </dialog>
+    <button>ダイアログを表示する</button>
+    <script src="dialog_backdrop.js"></script>
+</body>
+</html>

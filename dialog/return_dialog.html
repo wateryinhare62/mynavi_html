@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダイアログの操作結果を受け取る</title>
+</head>
+
+<body>
+    <dialog>
+        <form>
+            <p><label>好きな麺類を教えてください：
+                <select>
+                    <option value="default">選択してください</option>
+                    <option>ラーメン</option>
+                    <option>そば</option>
+                    <option>うどん</option>
+                    <option>その他</option>
+                </select>
+            </label></p>
+            <div>
+                <button id="confirm" value="default">送信</button>
+                <button value="cancel" formmethod="dialog">キャンセル</button>
+            </div>
+        </form>
+    </dialog>
+    <p><button id="showButton">麺類選択ダイアログを表示する</button></p>
+    <output>選択結果はここに表示されます！</output>
+    <script src="return_dialog.js"></script>
+</body>
+
+</html>
