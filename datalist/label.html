@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト入力（ラベル付き）</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <label for="noodle-soup">お好きなスープを選んでください：</label>
+    <input type="text" list="noodle-soup-list" id="noodle-soup" name="noodle-soup" />
+
+    <datalist id="noodle-soup-list">
+        <option value="しょうゆ" label="何といっても基本はしょうゆ味です。">
+        <option value="みそ" label="寒い季節にはやっぱり味噌味ですね。">
+        <option value="塩" label="あっさりした塩味も人気です。">
+        <option value="豚骨" label="ガツンとしたパンチが欲しければ豚骨で。">
+        <option value="ソース" label="千葉県の一部地域で人気だそうです。">
+    </datalist>
+</body>
+
+</html>

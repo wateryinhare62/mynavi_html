@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select要素の併用</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <label for="noodle-soup">お好きなスープを選んでください：</label>
+    <input type="text" list="noodle-soup-list" id="noodle-soup" name="noodle-soup" />
+    <datalist id="noodle-soup-list">
+        <select name="noodle-soup">
+            <option value="しょうゆ">しょうゆ</option>
+            <option value="みそ">みそ</option>
+            <option value="塩">塩</option>
+            <option value="豚骨">豚骨</option>
+            <option value="ソース">ソース</option>
+        </select>
+    </datalist>
+</body>
+
+</html>

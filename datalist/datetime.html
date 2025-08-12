@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カレンダー入力</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <label for="date-list">希望の日付を選んでください：</label>
+    <input type="date" list="date-list" name="date-list" />
+
+    <datalist id="date-list">
+        <option value="2025-09-07">
+        <option value="2025-09-14">
+        <option value="2025-09-21">
+        <option value="2025-09-28">
+    </datalist>
+
+    <label for="time-list">希望の時間帯を選んでください：</label>
+    <input type="time" list="time-list" name="time-list" />
+
+    <datalist id="time-list">
+        <option value="09:00">
+        <option value="12:00">
+        <option value="15:00">
+        <option value="18:00">
+    </datalist>
+
+    <label for="datetime-list">希望の日時を選んでください：</label>
+    <input type="datetime-local" list="datetime-list" name="datetime-list" />
+
+    <datalist id="datetime-list">
+        <option value="2025-09-07T09:00">
+        <option value="2025-09-14T12:00">
+        <option value="2025-09-21T15:00">
+        <option value="2025-09-28T18:00">
+    </datalist>
+    
+</body>
+
+</html>
