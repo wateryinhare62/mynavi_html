@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+}
+
+:popover-open {
+    inset: unset;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 300px;
+    text-align: center;
+    border: solid 1px blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: yellowgreen;
+}
+
+#popover1:popover-open {
+    inset: unset;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 300px;
+    text-align: center;
+    border: solid 1px green;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#popover2:popover-open {
+    inset: unset;
+    position: absolute;
+    top:  70px;
+    left: 230px;
+    width: 300px;
+    text-align: center;
+    border: solid 1px green;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}

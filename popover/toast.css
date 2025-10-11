@@ -1,0 +1,17 @@
+body {
+    background-color: peachpuff;
+}
+
+:popover-open {
+    width: 300px;
+    text-align: center;
+    border: solid 1px palevioletred;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+[popover]::backdrop {
+    opacity: 0.5;
+    backdrop-filter: blur(3px);
+    background-color: black;
+}

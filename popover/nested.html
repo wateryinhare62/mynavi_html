@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入れ子になったPopover</title>
+    <link rel="stylesheet" href="nested.css">
+</head>
+
+<body>
+    <button popovertarget="popover1">ポップオーバーを表示</button>
+    <div id="popover1" popover>ラーメン食べたい！<br>
+    <button popovertarget="popover2">ポップオーバーを表示</button>
+        <div id="popover2" popover>スープは何といってもとんこつ！</div>
+    </div>
+</body>
+
+</html>

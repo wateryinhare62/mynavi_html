@@ -1,0 +1,22 @@
+body {
+    background-color: darkkhaki;
+}
+
+#popover1:popover-open {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border: solid 1px gold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+
+#popover2:popover-open {
+    width: 300px;
+    color: white;
+    text-align: center;
+    background-color: darkkhaki;
+    border: solid 1px gold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gold;
+}
