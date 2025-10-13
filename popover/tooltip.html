@@ -8,11 +8,16 @@
 </head>
 <body>
     <h1>ツツウラウラ</h1>
-    <img src="ramen.jpg" alt="ラーメンのイラスト" width="100">
-    <button id="shoyu">しょうゆ</button>
-    <button id="shio">しお</button>
-    <button id="miso">みそ</button>
-    <div id="popover" popover></div>
+    <button id="word" popovertarget="word-popover">今日のひとこと</button>
+    <div id="word-popover" popover="auto">今日もラーメンを食べよう！<br>
+        <img src="ramen.jpg" alt="ラーメンのイラスト" width="100">
+    </div>
+    <div class="hints"><a id="shoyu" href="#">しょうゆ</a></div>
+    <div id="popover-shoyu" class="hint-popover" popover="hint">ラーメンといえば醤油でしょう。</div>
+    <div class="hints"><a id="shio" href="#">しお</a></div>
+    <div id="popover-shio" class="hint-popover" popover="hint">あっさりとした塩ラーメンもいいですね。</div>
+    <div class="hints"><a id="miso" href="#">みそ</a></div>
+    <div id="popover-miso" class="hint-popover" popover="hint">寒くなってきたらやっぱり味噌味。</div>
     <script src="tooltip.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="hint.css">
 </head>
 <body>
-    <button popovertarget="popover1">ポップオーバー1を表示</button>
-    <div id="popover1" popover="auto">ラーメン食べたい！</div>
-    <button popovertarget="popover2">ポップオーバー2を表示</button>
-    <div id="popover2" popover="hint">お寿司食べたい！</div>
-    <button popovertarget="popover3">ポップオーバー3を表示</button>
-    <div id="popover3" popover="hint">お好み焼き食べたい！</div>
+    <button popovertarget="popover-auto">ポップオーバーを表示/非表示</button>
+    <div id="popover-auto" popover="auto">ラーメン食べたい！</div>
+
+    <div><span id="hint-1">ヒント1</span></div>
+    <div id="popover-hint-1" popover="hint">お寿司食べたい！</div>
+    <div><span id="hint-2">ヒント2</span></div>
+    <div id="popover-hint-2" popover="hint">お好み焼き食べたい！</div>
+
+    <script src="hint.js"></script>
 </body>
 </html>

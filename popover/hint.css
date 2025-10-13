@@ -1,36 +1,38 @@
 body {
-    background-color: darkkhaki;
+    background-color: lightgray;
 }
 
-#popover1:popover-open {
+button {
+    display: block;
+    margin: 0.5rem;
+}
+
+#hint-1 {
+    anchor-name: --hint-1;
+    margin: 0.5rem;
+}
+
+#hint-2 {
+    anchor-name: --hint-2;
+    margin: 0.5rem;
+}
+
+#popover-hint-1:popover-open {
+    position-anchor: --hint-1;
     inset: unset;
     position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 300px;
-    text-align: center;
-    border: solid 1px gold;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white;
+    top: anchor(bottom);
+    left: anchor(center);
+    border: solid 1px black;
+    box-shadow: 5px 5px 10px gray;
 }
 
-#popover2:popover-open {
-    inset: 0;
-    width: 300px;
-    text-align: center;
-    border: solid 1px gold;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white;
-}
-
-#popover3:popover-open {
+#popover-hint-2:popover-open {
+    position-anchor: --hint-2;
     inset: unset;
     position: absolute;
-    right: 50px;
-    bottom: 50px;
-    width: 300px;
-    text-align: center;
-    border: solid 1px gold;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white;
+    top: anchor(bottom);
+    left: anchor(center);
+    border: solid 1px black;
+    box-shadow: 5px 5px 10px gray;
 }

@@ -2,11 +2,17 @@ body {
     background-color: lightblue;
 }
 
-:popover-open {
+#anchor {
+    anchor-name: --anchor;
+}
+
+#popover:popover-open {
+    position-anchor: --anchor;
     inset: unset;
     position: absolute;
-    top: 70px;
-    left: 50px;
+    top: anchor(bottom);
+    left: anchor(center);
+    translate: 0 -10px;
     width: 300px;
     text-align: center;
     border: solid 1px blue;

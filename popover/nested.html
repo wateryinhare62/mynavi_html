@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,26 @@
 </head>
 
 <body>
+    <h1>DOMを入れ子にする</h1>
     <button popovertarget="popover1">ポップオーバーを表示</button>
     <div id="popover1" popover>ラーメン食べたい！<br>
-    <button popovertarget="popover2">ポップオーバーを表示</button>
+        <button popovertarget="popover2">ポップオーバーを表示</button>
         <div id="popover2" popover>スープは何といってもとんこつ！</div>
     </div>
+
+    <h1>DOMを入れ子にする</h1>
+    <button popovertarget="popover1">ポップオーバーを表示</button>
+    <div id="popover1" popover>ラーメン食べたい！<br>
+        <button popovertarget="popover2">ポップオーバーを表示</button>
+    </div>
+    <div id="popover2" popover>スープは何といってもとんこつ！</div>
+
+    <h1>DOMを入れ子にする</h1>
+    <button popovertarget="popover1">ポップオーバーを表示</button>
+    <div id="popover1" popover>ラーメン食べたい！<br>
+        <button popovertarget="popover2">ポップオーバーを表示</button>
+    </div>
+    <div id="popover2" anchor="popover1" popover>スープは何といってもとんこつ！</div>
 </body>
 
 </html>

@@ -1,33 +1,72 @@
 body {
+    background-color: lightyellow;
+}
+
+button {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+div.hints {
+    margin-bottom: 1rem;
+}
+
+#word-popover {
+    width: 400;
+    text-align: center;
+    border: solid 1px darkslategray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
     background-color: white;
 }
 
-button, img {
-    display: block;
-    margin: 0.5rem;
+#shoyu {
+    anchor-name: --shoyu;
 }
 
-[popover]:popover-open {
-    transform-origin: left;
-    transform: scaleX(1);
-    width: 300px;
-    text-align: center;
-    border: solid 1px black;
-    box-shadow: 5px 5px 10px gray;
+#shio {
+    anchor-name: --shio;
 }
 
-[popover] {
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.7s;
-    width: 300px;
-    text-align: center;
+#miso {
+    anchor-name: --miso;
+}
+
+#popover-shoyu {
+    position-anchor: --shoyu;
+}
+
+#popover-shio {
+    position-anchor: --shio;
+}
+
+#popover-miso {
+    position-anchor: --miso;
+}
+
+.hint-popover:popover-open {
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+}
+
+.hint-popover {
+    inset: unset;
+    position: absolute;
+    top: anchor(bottom);
+    left: anchor(center);
+    opacity: 0;
+    scale: 0.8;
+    translate: 0 8px;
+    transition: all 0.7s allow-discrete;
     border: solid 1px black;
     box-shadow: 5px 5px 10px gray;
 }
 
 @starting-style {
-  [popover]:popover-open {
-    transform: scaleX(0);
-  }
+    .hint-popover:popover-open {
+        opacity: 0;
+        scale: 0.8;
+        translate: 0 8px;
+    }
 }
