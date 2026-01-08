@@ -1,0 +1,10 @@
+button {
+    display: block;
+    margin-top: 1rem;
+}
+
+iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+}

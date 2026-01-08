@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture-in-Picture（iframe使用）</title>
+  <link rel="stylesheet" href="pip_iframe.css">
+</head>
+
+<body>
+  <div id="pip-container">
+    <iframe id="picture-in-picture" width="480px" height="330px" srcdoc='<video src="sample1.mp4" width="450px" height="300px" controls></video>'></iframe>
+  </div>
+
+  <button id="start">Picture-in-Pictureをはじめる</button>
+
+  <script src="pip_iframe.js"></script>
+</body>
+
+</html>
