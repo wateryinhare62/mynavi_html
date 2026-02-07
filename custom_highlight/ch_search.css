@@ -1,0 +1,9 @@
+::highlight(search-result-1) {
+  background-color: pink;
+  color: gray;
+}
+
+::highlight(search-result-2) {
+  background-color: lime;
+  color: darkblue;
+}
