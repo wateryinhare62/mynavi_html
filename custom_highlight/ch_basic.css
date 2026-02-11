@@ -1,4 +1,12 @@
+pre {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  font-family: 'Courier New', monospace;
+}
+
 ::highlight(highlight) {
-  background-color: red;
-  color: white;
+  background-color: lightgray;
+  color: red;
+  font-weight: bold;
 }
