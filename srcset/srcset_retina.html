@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画面解像度で画像切り替えあり</title>
+</head>
+<body>
+    <h2>画面解像度で画像切り替えあり</h2>
+    <div>
+        <img 
+            src="https://annex.naosan.jp/mynavi_html/srcset/img/image_512.jpg" 
+            alt="image" width="512px"
+            srcset="
+                https://annex.naosan.jp/mynavi_html/srcset/img/image_512.jpg 1x, 
+                https://annex.naosan.jp/mynavi_html/srcset/img/image_512_2x.jpg 2x
+            " 
+        />
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表示幅を切り替え</title>
+</head>
+<body>
+    <h2>表示幅を切り替え</h2>
+        <img 
+            src="https://annex.naosan.jp/mynavi_html/srcset/img/image_1920.jpg" alt="image"
+            srcset="
+                https://annex.naosan.jp/mynavi_html/srcset/img/image_512.jpg 512w, 
+                https://annex.naosan.jp/mynavi_html/srcset/img/image_1024.jpg 1024w, 
+                https://annex.naosan.jp/mynavi_html/srcset/img/image_1920.jpg 1920w
+            "
+            sizes="
+                (max-width: 512px) 100vw,
+                95vw
+            "
+        />
+</body>
+</html>
