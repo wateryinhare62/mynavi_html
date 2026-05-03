@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリップボードへのテキストのコピー</title>
+    <script src="copy_text.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>クリップボードへのテキストのコピー</h2>
+    <p><pre id="target">let kukuText = '';
+for (let i = 1; i <= 9; i++) {
+    for (let j = 1; j <= 9; j++) {
+        kukuText += `${i} × ${j} = ${i * j}`;
+        if (j < 9) {
+            kukuText += '\n';
+        }
+    }
+    if (i < 9) {
+        kukuText += '\n\n';
+    }
+}</pre></p>
+    <div><button id="button">テキストのコピー</button></div>
+    <p id="feedback">結果はここに表示されます。</p>
+</body>
+</html>

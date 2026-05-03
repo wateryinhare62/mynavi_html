@@ -1,0 +1,16 @@
+pre#target {
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+canvas#target {
+    border: 1px solid #ccc;
+}
+
+input, button {
+    display: block;
+    margin: 10px 0;
+}
