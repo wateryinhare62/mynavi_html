@@ -14,19 +14,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         try {
             const clipboardItems = await navigator.clipboard.read();
-            for (const clipboardItem of clipboardItems) {
-                if (clipboardItem.types.includes('image/png')) {
-                    const blob = await clipboardItem.getType('image/png');
-                    const img = new Image();
-                    img.onload = () => {
-                        const targetCanvas = document.getElementById('target');
-                        const targetContext = targetCanvas.getContext('2d');
-                        targetContext.drawImage(img, 0, 0);
-                        feedbackElement.textContent = '貼り付けました！';
-                    };
-                    img.src = URL.createObjectURL(blob);
-                } else {
-                    feedbackElement.textContent = 'クリップボードに画像が見つかりませんでした。';
+            if (!clipboardItems.some(item => item.types.includes('image/png'))) {
+                feedbackElement.textContent = 'クリップボードに画像が見つかりませんでした。';
+            } else {
+                for (const clipboardItem of clipboardItems) {
+                    if (clipboardItem.types.includes('image/png')) {
+                        const blob = await clipboardItem.getType('image/png');
+                        const img = new Image();
+                        img.onload = () => {
+                            const targetCanvas = document.getElementById('target');
+                            const targetContext = targetCanvas.getContext('2d');
+                            targetContext.drawImage(img, 0, 0);
+                            feedbackElement.textContent = '貼り付けました！';
+                        };
+                        img.src = URL.createObjectURL(blob);
+                        break;
+                    }
                 }
             }
         } catch (err) {
