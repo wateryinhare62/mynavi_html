@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return !!navigator.clipboard && window.isSecureContext;
     }
 
-    buttonElement.addEventListener('click', async function () {
+    buttonElement.addEventListener('click', async () => {
         if (!canUseClipboard()) {
             feedbackElement.textContent = 'Clipboard APIは安全なコンテキストでのみ利用可能です。';
             return;
