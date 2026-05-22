@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const targetElement = document.getElementById('target');
     const buttonElement = document.getElementById('button');
     const feedbackElement = document.getElementById('feedback');
