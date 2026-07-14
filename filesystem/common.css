@@ -1,0 +1,31 @@
+textarea, canvas {
+    margin: 10px 0;
+}
+
+div#drop-target {
+    width: 400px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+div#dir-content {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    margin-right: 5px;
+}
