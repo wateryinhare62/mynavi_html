@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファイルとディレクトリの管理</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <h2>ファイルとディレクトリの管理</h2>
+    <p><button id="select-button">ディレクトリを開く</button>&nbsp;
+        <span id="dirname"></span>
+    </p>
+    <p><input type="text" id="name-input" placeholder="ファイル名かディレクトリ名を入力">
+        <button id="create-file-button">ファイルを作成</button>&nbsp;
+        <button id="create-dir-button">ディレクトリを作成</button>
+    </p>
+    <p id="result-message">ディレクトリを選択してください。</p>
+    <div id="dir-content"></div>
+    <script src="dir_read.js"></script>
+</body>
+</html>

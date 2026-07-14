@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラッグ＆ドロップによるファイルの読み込み</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <h2>ドラッグ＆ドロップによるファイルの読み込み</h2>
+    <div id="drop-target">
+        ファイルをここにドラッグ＆ドロップしてください
+    </div>
+    <p><span id="filename"></span></p>
+    <textarea id="textContent" rows="20" cols="80" hidden></textarea>
+    <canvas id="imageContent" width="500" height="500" hidden></canvas>
+    <script src="drop_read.js"></script>
+</body>
+</html>
